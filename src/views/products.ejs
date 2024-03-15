@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+    <body>
+
+        <%- include('./partials/header') %>
+            <br>
+            <main>
+                <div class="container">
+                    <section class="products-list">
+                        <header class="section-header">
+                            <h2>Productos</h2>
+                            <a href="/products/create">Crear producto</a>
+                        </header>
+                        <hr>
+                        <% products.forEach(product=> { %>
+                            <br>
+                            <a href="/products/<%= product.id %>" style="display: flex; gap: 10px;">
+                                <figure style="height: 100%; width: 70px; max-height: 100px; overflow: hidden;">
+                                    <img src="<%= product.image %>" alt="<%= product.name %>" style="width: 100%;">
+                                </figure>
+                                <article>
+                                    <h3>
+                                        <%= product.name %>
+                                    </h3>
+                                    <h4>$<%= product.price %>
+                                    </h4>
+                                    <span>
+                                        <%= product.brand %>
+                                    </span>
+                                    <button>Añadir al Carrito</button>
+                                </article>
+                            </a>
+                            <br>
+                            <hr>
+                            
+                            <% }) %>
+
+                    </section>
+                </div>
+            </main>
+            <br>
+            <hr>
+            <br>
+            <%- include('./partials/footer') %>
+
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %>
+    
+    <body>
+        
+        <%- include('./partials/header') %>
+        <br>
+        <main>
+            <section class="container">
+                <h2 class="section-title">Crear producto</h2>
+                
+                <form  class="create-product-form" action="/products/create" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input class="inp" type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="brand">Marca</label>
+                        <input class="inp" type="text" name="brand" id="brand" required>
+                    </div>
+                    <div>
+                        <label for="price">Precio</label>
+                        <input class="inp" type="number" name="price" id="price" required>
+                    </div>
+                    <div>
+                        <label for="description">Descripcion</label>
+                        <textarea class="inp txt-a" name="description" id="description"></textarea>
+                    </div>
+                    <div>
+                        <label for="image">Imagen</label>
+                        <input type="file" name="image" id="image" required >
+                    </div>
+                    <button class="btn" type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        
+        <hr>
+        
+        <%- include('./partials/footer') %>
+
+    </body>
+</html>

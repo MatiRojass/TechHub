@@ -1,10 +1,20 @@
+const { usersData, findUser } = require('../models/usersModel')
+
 const usersController = {
     list: (req, res) => {
-        res.send('lista de usuarios')
+        const users = usersData()
+        console.log(users)
+        res.render('users', { users })
     },
 
     detail: (req, res) => {
-        res.send('detalle usuario ' + req.params.userId)
+        const user = findUser(req.params.userId)
+
+        if(!user){
+            res.send('El usuario no existe')
+        }else{
+            res.render('userDetail', {user})
+        }
     }
 }
 

@@ -1,30 +1,66 @@
 [
-    {
-      "id": 1,
-      "firstName": "Lionel",
-      "lastName": "Messi",
-      "email": "lionel.messi@example.com",
-      "password": "password123"
-    },
-    {
-      "id": 2,
-      "firstName": "Cristiano",
-      "lastName": "Ronaldo",
-      "email": "cristiano.ronaldo@example.com",
-      "password": "ronaldo123"
-    },
-    {
-      "id": 3,
-      "firstName": "Neymar",
-      "lastName": "Jr.",
-      "email": "neymar.jr@example.com",
-      "password": "neymar456"
-    },
-    {
-      "id": 4,
-      "firstName": "Luis",
-      "lastName": "Suarez",
-      "email": "luis.suarez@example.com",
-      "password": "suarez789"
-    }
-  ]
+ {
+  "id": 1,
+  "firstName": "Lionel",
+  "lastName": "Messi",
+  "email": "lionel.messi@example.com",
+  "password": "password123",
+  "avatar": "/images/avatars/leo-messi.jpg"
+ },
+ {
+  "id": 2,
+  "firstName": "Cristiano",
+  "lastName": "Ronaldo",
+  "email": "cristiano.ronaldo@example.com",
+  "password": "ronaldo123",
+  "avatar": "/images/avatars/cristiano-ronaldo.jpeg"
+ },
+ {
+  "id": 3,
+  "firstName": "Neymar",
+  "lastName": "Jr.",
+  "email": "neymar.jr@example.com",
+  "password": "neymar456",
+  "avatar": "/images/avatars/neymar-jr.webp"
+ },
+ {
+  "id": 4,
+  "firstName": "Luis",
+  "lastName": "Suarez",
+  "email": "luis.suarez@example.com",
+  "password": "suarez789",
+  "avatar": "/images/avatars/luis-suarez.jpg"
+ },
+ {
+  "firstName": "Matias",
+  "lastName": "Rojas",
+  "email": "rojasmatias409@gmail.com",
+  "password": "milanesa24",
+  "avatar": "/images/avatars/Foto Perfil Comprimida_1710573273842.png",
+  "id": 1710573273851
+ },
+ {
+  "firstName": "Rodrigo",
+  "lastName": "Aliendro",
+  "email": "rodri@mail.com",
+  "password": "foool",
+  "avatar": "/images/avatars/KRvqJgxrH_600x600__1_1710573312829.jpg",
+  "id": 1710573312832
+ },
+ {
+  "firstName": "Homero",
+  "lastName": "Simpson",
+  "email": "homerojs@mail.com",
+  "password": "maggie",
+  "avatar": "/images/avatars/default-avatar.jpg",
+  "id": 1710573374464
+ },
+ {
+  "firstName": "Nicolas",
+  "lastName": "Juares",
+  "email": "nicoju@mail.com",
+  "password": "cacona123",
+  "avatar": "/images/avatars/17105744621461619974541522477522_1710574509870.jpg",
+  "id": 1710574511019
+ }
+]

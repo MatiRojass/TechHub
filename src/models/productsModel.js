@@ -19,6 +19,20 @@ const productsModel = {
 
         productsModel.updateProducts(allProducts)
     },
+
+    editProduct: (newProduct, id) => {
+        const product = productsModel.findProduct(id) 
+        const allProducts = productsModel.productsData()
+        const productIndex = allProducts.findIndex(product => product.id == id)
+
+        allProducts[productIndex] = {...product, ...newProduct}
+
+        productsModel.updateProducts(allProducts)
+    },
+
+    deleteProduct: (id) => {
+        productsModel.updateProducts(productsModel.productsData().filter(product => product.id != id))
+    }
 }
 
 module.exports = productsModel

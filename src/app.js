@@ -30,8 +30,8 @@ app.use('/users', usersRoutes)
 const productsRouter = require('./routes/productsRouter')
 app.use('/products', productsRouter)
 
-// app.use((req,res,next) => {
-//     res.status(404).render('not-found')
-// })
+app.use((req,res,next) => {
+    res.status(404).render('not-found')
+})
 
 

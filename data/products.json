@@ -1,9 +1,9 @@
 [
  {
   "id": 1,
-  "name": "Galaxy S21",
+  "name": "Galaxy S22",
   "brand": "Samsung",
-  "price": 150000,
+  "price": "150000",
   "description": "El Samsung Galaxy S21 es un smartphone Android con una pantalla de 6.2 pulgadas a resolución Full HD+.",
   "image": "/images/products/galaxy_s21.webp"
  },
@@ -11,7 +11,7 @@
   "id": 2,
   "name": "iPhone 13",
   "brand": "Apple",
-  "price": 200000,
+  "price": "0",
   "description": "El iPhone 13 de Apple cuenta con una pantalla Super Retina XDR de 6.1 pulgadas y está potenciado por el chip A15 Bionic.",
   "image": "/images/products/iphone_13.webp"
  },
@@ -80,27 +80,19 @@
   "image": "/images/products/oppo_find_x3_pro.webp"
  },
  {
-  "name": "Gato",
-  "brand": "Mewing",
-  "price": "10000",
-  "description": "Bro, de verdad esta haciendo mewing!",
-  "image": "images/products/gato_mewing_1710485036425.jpg",
-  "id": 1710485036433
+  "name": "Vicky",
+  "brand": "Rojas",
+  "price": "2000000000000",
+  "description": "La niña rata de ultimo modelo",
+  "image": "/images/products/vicky_1710823692567.jpg",
+  "id": 1710823692570
  },
  {
   "name": "Oliver",
   "brand": "Ladrador",
-  "price": "100",
-  "description": "feo y negro",
-  "image": "images/products/oliDURMIENDO_1710485113707.jpg",
-  "id": 1710485113710
- },
- {
-  "name": "Vicki",
-  "brand": "Rojas",
-  "price": "10000000",
-  "description": "La bebe mas jodida del universo",
-  "image": "images/products/IMG-20240224-WA0029_1710487252828.jpg",
-  "id": 1710487252847
+  "price": "1",
+  "description": "fiero",
+  "image": "/images/products/oliDURMIENDO_1710823721984.jpg",
+  "id": 1710823721987
  }
 ]

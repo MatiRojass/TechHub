@@ -3,8 +3,7 @@ const { usersData, findUser } = require('../models/usersModel')
 const usersController = {
     list: (req, res) => {
         const users = usersData()
-        console.log(users)
-        res.render('users', { users })
+        res.render('users/users', { users })
     },
 
     detail: (req, res) => {
@@ -13,7 +12,7 @@ const usersController = {
         if(!user){
             res.send('El usuario no existe')
         }else{
-            res.render('userDetail', {user})
+            res.render('users/userDetail', {user})
         }
     }
 }

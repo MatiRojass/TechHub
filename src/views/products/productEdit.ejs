@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
     
     <body>
         
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
         <br>
         <main>
             <section class="container">
                 <h2 class="section-title">Crear producto</h2>
                 
-                <form  class="form-style" action="/products/create" method="post" enctype="multipart/form-data">
+                <form  class="form-style" action="/products/<%= product.id %>/edit?_method=PUT" method="post" >
                     <div>
                         <label for="name">Nombre</label>
-                        <input class="inp" type="text" name="name" id="name" required>
+                        <input class="inp" type="text" name="name" id="name" value="<%= product.name %>" >
                     </div>
                     <div>
                         <label for="brand">Marca</label>
-                        <input class="inp" type="text" name="brand" id="brand" required>
+                        <input class="inp" type="text" name="brand" id="brand" value="<%= product.brand %>" >
                     </div>
                     <div>
                         <label for="price">Precio</label>
-                        <input class="inp" type="number" name="price" id="price" required>
+                        <input class="inp" type="number" name="price" id="price" value="<%= product.price %>" >
                     </div>
                     <div>
                         <label for="description">Descripcion</label>
-                        <textarea class="inp txt-a" name="description" id="description"></textarea>
-                    </div>
-                    <div>
-                        <label for="image">Imagen</label>
-                        <input type="file" name="image" id="image" required >
+                        <textarea class="inp txt-a" name="description" id="description"><%= product.description %></textarea>
                     </div>
                     <button class="btn" type="submit">Enviar</button>
                 </form>
@@ -39,7 +35,7 @@
         
         <hr>
         
-        <%- include('./partials/footer') %>
+        <%- include('../partials/footer') %>
 
     </body>
 </html>

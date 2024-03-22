@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+    <style>
+        dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 27px;
+        }
+
+        #close{
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    </style>
+
+    <body>
+
+        <%- include('../partials/header') %>
+            <br>
+            <main>
+                <div class="container">
+                    <figure >
+                        <img src="<%= product.image %>" alt="<%= product.name %>" width="100">
+                    </figure>
+                    <h2>
+                        <%= product.name %>
+                    </h2>
+                    <h3>
+                        <%= product.price %>
+                    </h3>
+                    <h4>$<%= product.brand %>
+                    </h4>
+                    <p>
+                        <%= product.description %>
+                    </p>
+                    <br>
+                    <button class="btn">Añadir al Carrito</button>
+                    <button class="btn">Comprar</button>
+
+                    <a href="/products/<%= product.id %>/edit" class="btn">editar</a>
+
+                    <button style="background-color: red;" class="btn" id="open">Eliminar</button>
+                </div>
+            </main>
+            <dialog id="delete-window">
+                <button id="close">X</button>
+                <div>
+                        <h3>Estas seguro de que quieres eliminar:</h3>
+                        <h4>
+                            <%= product.name %>
+                        </h4>
+                        
+                        <form action="/products/<%= product.id %>?_method=DELETE" method="post">
+                            <button style="background-color: red;" class="btn">Eliminar</button>
+                        </form>
+                </div>
+            </dialog>
+            <br>
+            <hr>
+            <br>
+            <%- include('../partials/footer') %>
+
+                <script>
+                    const openButton = document.getElementById("open");
+                    const closeButton = document.getElementById("close");
+                    const modal = document.getElementById("delete-window");
+
+                    openButton.addEventListener("click", function () {
+                        modal.showModal();
+                    });
+
+                    closeButton.addEventListener("click", function () {
+                        modal.close();
+                    });
+                </script>
+    </body>
+
+</html>

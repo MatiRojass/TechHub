@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
     
     <body>
         
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
         <main>
             <div class="container">
                 <section>
@@ -15,7 +15,7 @@
                     </header>
                     <div class="product-container">
                         <div class="products-cards-container">
-                            <% for( let i = 0; i < 7; i++ ) { %>
+                            <% for( let i = 0; i < 12; i++ ) { %>
                                 <a href="/products/<%= products[i].id %>">
                                     <article class="product-card">
                                             <figure class="product-card-image-container">
@@ -43,7 +43,7 @@
         <br>
         <hr>
         <br>
-        <%- include('./partials/footer') %>
+        <%- include('../partials/footer') %>
 
     </body>
 </html>

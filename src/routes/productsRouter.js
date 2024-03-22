@@ -28,6 +28,9 @@ router.get('/', productsController.list)
 router.get('/create', productsController.create)
 router.post('/create', uploadFile.single('image'),productsController.updateCreate)
 router.get('/:productId', productsController.detail)
+//eliminar producto
+router.delete('/:productId', productsController.delete)
+//editar producto
 router.get('/:productId/edit', productsController.edit)
 router.put('/:productId/edit', productsController.updateEdit)
 
